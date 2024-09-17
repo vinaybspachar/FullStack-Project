@@ -1,0 +1,29 @@
+<html>
+<head>
+<title></title>
+<style>
+    #box {
+        background-color: blue;
+        width:200px;
+        height: 200px;
+    }
+    </style>
+</head>
+<body>
+    <h1> Reaction time!!</h1>
+    <p>Click the shapes below to test your reaction times </p>
+    <div onclick="disapper()" id="box">
+    </div>
+     
+    <script>
+        function disapper() {
+            document.getElementById('box').style.display='none';
+            setTimeout(apper, 3000);
+        }
+
+        function appear() {
+            document.getElementById('box').style.display='block';
+        }
+        </script>
+</body>
+</html>

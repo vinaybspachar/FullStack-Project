@@ -1,0 +1,62 @@
+<html>
+<head>
+    <title>
+    </title>
+    <style>
+        body{
+            background-color: #D680ED;
+            font-family: monospace;
+
+        }
+        div{
+            background-color: #EDD580;
+            border-radius: 30px;
+            text-align: center ;
+            padding: 25px;
+        }
+
+        h4{
+            font-size: 18px;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1> Trip calculater</h1>
+        <form>
+            <p>Total bill amount</p>
+            <input type = "text" id="billAmount">
+            <p>Quality of services:</p>
+            <select id="QualityServices">
+                <option value="0.05">Bad - 5%</option>
+                <option value="0.1">Ok -  10%</option>
+                <option value="0.2">Great - 20%</option>
+            </select>
+            <p>Number of people:</p>
+            <input  id='numpeople' type="text">
+        </form>
+        <button type="button"  onclick="calculateTip()"   name="button"> Calculate </button>  
+        <h4 id="result"></h4>  
+
+            </div>
+    <script>
+        
+        function calculateTip() {
+            var totalAmount = document.getElementById('billAmount').value;
+            var QualityofServices = document.getElementById('QualityServices').value;
+            var numofpeople = document.getElementById('numpeople').value;
+
+            if(totalAmount === '' ) {
+                alert("Pls enter the totla bill amount")
+            } else if (numofpeople == '') {
+                alert("Pls Put the number of people")
+            } else {
+            var tipPerPerson = (totalAmount*QualityofServices)/numofpeople;
+            document.getElementById('result').innerHTML='Tip amount: <br>' + '$' + tipPerPerson + '<br>Per Person';
+         }
+         }
+ 
+        </script>
+
+</body>

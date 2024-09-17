@@ -1,0 +1,27 @@
+p {
+  background-color: blue;
+}
+
+h1 {
+  color: blue;
+  background-color: green;
+}
+
+ol {
+  color: red;
+  background-color: pink;
+  border: 6px solid green;
+}
+
+img {
+  border: 6px solid pink;
+  width: 10%;
+}
+
+body{
+  background-color: orange;
+}
+
+table, th, td {
+  border: 3px solid green;
+}

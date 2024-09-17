@@ -1,0 +1,17 @@
+body {
+  background-color: #E4F2F2;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: gold;
+  font-family: serif;
+}
+
+p {
+  font-size: 30px;
+  font-family: fantasy;
+  color: #FF8B17;
+  text-transform: lowercase;
+}

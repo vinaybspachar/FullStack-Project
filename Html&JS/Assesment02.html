@@ -1,0 +1,22 @@
+<html>
+<head>
+<title> For Loop </title>
+</head>
+<body>
+<h1> Harry car dealership </h1>
+<h3> These are the models we currently have </h3>
+<p id = "CarModels" >  </p>
+<script>
+var avilableModels = ['BMW', 'Ford', ' Aston Martin', 'Ferrari'];
+
+var para = '';
+
+for (i=0; i<avilableModels.length; i++) {
+para +=  avilableModels[i] + '<br>';
+
+}
+
+document.getElementById('CarModels').innerHTML = para;
+</script>
+</body>
+</html>

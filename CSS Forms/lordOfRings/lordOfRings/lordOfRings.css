@@ -1,0 +1,33 @@
+body {
+  background-color: #FCD226;
+}
+
+h1 {
+  font-family: Lucida Console;
+  text-align: center;
+  color: #F71F07;
+}
+
+p {
+  font-size: 24px;
+  color: #F71F07;
+}
+
+div {
+  background-color: #F7E07E;
+}
+
+.imgContainer {
+  position: relative;
+  left: 100px;
+}
+
+#copyright {
+  position: absolute;
+  bottom: 10px;
+}
+
+img {
+  width: 30%;
+  padding: 50px;
+}

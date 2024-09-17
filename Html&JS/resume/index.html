@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinay B A - Software Engineer Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("contactForm").addEventListener("submit", function(event) {
+                event.preventDefault(); // Prevent form submission
+
+                // Capture form values
+                const name = document.getElementById("name").value;
+                const email = document.getElementById("email").value;
+                const message = document.getElementById("message").value;
+
+                // Display confirmation message
+                document.getElementById("confirmationMessage").innerText = `Thank you, ${name}. Your message has been sent!`;
+
+                // Reset form fields
+                document.getElementById("contactForm").reset();
+            });
+        });
+    </script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+    <!-- Header Section -->
+    <header class="bg-blue-600 text-white text-center py-6">
+        <h1 class="text-4xl font-bold">Vinay B A</h1>
+        <p class="mt-2">Software Engineer | Web Developer | Automation Tester</p>
+    </header>
+
+    <!-- About Section -->
+    <section class="py-12">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6">About Me</h2>
+            <p class="max-w-xl mx-auto text-lg">I am a highly motivated software engineer with a project-oriented approach and a passion for web development and automation testing. I enjoy working in teams and learning new technologies. My expertise lies in building scalable web applications and ensuring quality through automation testing.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="py-12 bg-gray-200">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6">Skills</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="p-6 bg-white rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold">HTML & CSS</h3>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold">JavaScript</h3>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold">Python</h3>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold">Java (OOPs)</h3>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold">MySQL</h3>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold">API Testing</h3>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold">Selenium</h3>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold">Automation Testing</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="py-12">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6">Experience</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="p-6 bg-white rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold mb-2">Software Tester</h3>
+                    <p class="text-lg">Tietoevry India Pvt Ltd, Bangalore (Present)</p>
+                    <p>Working as a Software Tester focusing on automation and functional testing, ensuring the quality of web applications and services.</p>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold mb-2">Web Application Developer (Remote)</h3>
+                    <p class="text-lg">Solvendo Limited, Bangalore (Apr - Jun 2023)</p>
+                    <p>Developed and maintained web applications, integrating responsive design, front-end, and backend development using HTML, CSS, JavaScript, and MySQL.</p>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold mb-2">Intern Python Developer (Remote)</h3>
+                    <p class="text-lg">Hackveda Limited, Delhi (Feb - May 2023)</p>
+                    <p>Worked on various Python-based projects, gaining experience in backend development, automation, and database integration.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="py-12 bg-gray-200">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="p-6 bg-white rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold mb-2">Emergency Service Based on GPS</h3>
+                    <p class="text-lg">Developed an emergency service app using Android Studio with a user-friendly front end in XML and backend in Java. The app provides emergency services anywhere based on GPS.</p>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold mb-2">Health Advisor (OOPs - JAVA)</h3>
+                    <p class="text-lg">Created a console-based health report application using Java and BMI calculations to help users manage their health information.</p>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold mb-2">Online Course Registration System</h3>
+                    <p class="text-lg">Developed a MySQL database for online course registration, tracking student data and course selections with management functionality for instructors.</p>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold mb-2">ISE Department Website</h3>
+                    <p class="text-lg">Designed and developed the front end using HTML, CSS, and JavaScript, with PHP and MySQL for the backend to build a website for the Information Science and Engineering department.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-12">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6">Contact Me</h2>
+            <form id="contactForm" class="max-w-lg mx-auto">
+                <div class="mb-4">
+                    <input type="text" id="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none" placeholder="Your Name" required>
+                </div>
+                <div class="mb-4">
+                    <input type="email" id="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none" placeholder="Your Email" required>
+                </div>
+                <div class="mb-4">
+                    <textarea id="message" class="w-full px-4 py-2 border rounded-lg focus:outline-none" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="px-6 py-2 bg-blue-600 text-white rounded-lg">Send</button>
+            </form>
+            <p id="confirmationMessage" class="mt-4 text-green-600"></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-6 bg-gray-800 text-white text-center">
+        <p>&copy; 2024 Vinay B A. All rights reserved.</p>
+        <p>Email: <a href="mailto:vinaybspachar@gmail.com" class="text-blue-400">vinaybspachar@gmail.com</a> | Phone: 8296362048</p>
+        <p>
+            <a href="https://www.linkedin.com/in/vinay-b-a-2b8278234" class="text-blue-400">LinkedIn</a> | 
+            <a href="https://www.hackerrank.com/profile/vinaybspachar" class="text-blue-400">HackerRank</a> | 
+            <a href="https://www.instagram.com/anand_vnay?igsh=aWsyamllMnhzcTF3&utm_source=qr " class="text-blue-400">instagram</a>
+        </p>
+    </footer>
+</body>
+</html>

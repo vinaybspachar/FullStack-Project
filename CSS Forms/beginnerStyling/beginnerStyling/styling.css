@@ -1,0 +1,22 @@
+body {
+  background-color: grey;
+}
+
+p {
+  color: yellow;
+  background-color: blue;
+}
+
+ol {
+  background-color: red;
+  border: 3px solid green;
+}
+
+img {
+  border: 5px solid pink;
+  width: 10%;
+}
+
+table, td, th {
+  border: 3px solid yellow;
+}

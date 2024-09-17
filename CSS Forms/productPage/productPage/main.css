@@ -1,0 +1,19 @@
+body {
+  background-color: #A2F9EF;
+}
+
+h1 {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+p {
+  color: #ef99b6;
+  text-indent: 20px;
+  font-size: 20px;
+  font-family: monospace;
+}
+
+a {
+  font-size: 18px;
+}

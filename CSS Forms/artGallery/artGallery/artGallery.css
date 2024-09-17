@@ -1,0 +1,52 @@
+body {
+  background-color: #CBF49F;
+}
+
+h1 {
+  text-align: center;
+  border: 9px solid blue;
+  border-radius: 10px;
+}
+
+.welcomeMsg {
+  text-align: center;
+  font-family: sans-serif;
+  background-color: #F1F7BC;
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+
+.paintings {
+  margin: 30px;
+  border: 3px solid orange;
+}
+
+#description {
+  background-color: blue;
+  position: relative;
+  left: 25px;
+  height: 200px;
+  width: 500px;
+}
+
+.copyright {
+  position: relative;
+  bottom: 5px;
+  background-color: yellow;
+  width: 140px;
+}
+
+.shop{
+  background-color: red;
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+}
+
+#descriptionText {
+  padding-top: 60px;
+}
+
+img {
+  width:18%;
+}

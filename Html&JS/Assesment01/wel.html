@@ -1,0 +1,57 @@
+<html>
+<head>
+<title></title>
+</head>
+<style>
+h1 {
+text-align: center;
+}
+ h3 {
+text-align: center;
+}
+
+img {
+border:3px solid white;
+position: relative;
+left: 35%;
+}
+</style>
+<body>
+<h1> Welcome </h1>
+<h3 id="welcomeMSG"> Good ________ </h3>
+<img id="welcomeIMG" src="images.jpg" alt="">
+<script>
+    var hour = new Date().getHours();
+      /* morning 4am - 11am
+    day 12pm - 6pm
+    evening 7pm- 10pm
+    night 11pm - 3am */
+
+    if( hour >= 4 && hour <= 11) {
+        document.getElementById('welcomeMSG').innerHTML="Good morning!!!";
+        document.body.style.backgroundColor='#F9FF80';
+
+    } else if (hour >= 12 && hour <=18 ){
+        document.getElementById('welcomeMSG').innerHTML="Good day!!!";
+        document.body.style.backgroundColor='#F57918';
+        document.getElementById('welcomeIMG').src='day.jpg';
+
+
+    } else if (hour >= 19 && hour <=22 ){
+        document.getElementById('welcomeMSG').innerHTML="Good Evening!!!";
+        document.body.style.backgroundColor='#91979C';
+        document.getElementById('welcomeIMG').src='even.jpg';
+
+
+    } else {
+        document.getElementById('welcomeMSG').innerHTML="Good Night :) :)!!";
+        document.body.style.backgroundColor='#16170D';
+        document.getElementById('welcomeIMG').src='n8.jpg';
+
+
+    }
+    document.body.style.backgroundColor='#F9FF80';
+
+</script>
+</body>
+</html>
